@@ -37,3 +37,27 @@ const whichHouseAndWand = {
 let assignedHouseAndWand = [];
 
 // Iterate over the the objects
+
+for (let prop in whichHouseAndWand) {
+  let optionIdx = generateRandomNumber(whichHouseAndWand[prop].length);
+
+  switch (prop) {
+    case "house":
+      assignedHouseAndWand.push(
+        `You have been assigned the house: "${whichHouseAndWand[prop][optionIdx]}".`
+      );
+      break;
+    case "wood":
+      assignedHouseAndWand.push(
+        `The wood in your assigned wand is made of: "${whichHouseAndWand[prop][optionIdx]}".`
+      );
+      break;
+    case "core":
+      assignedHouseAndWand.push(
+        `The core in your assigned wand is made of: "${whichHouseAndWand[prop][optionIdx]}".`
+      );
+      break;
+    default:
+      assignedHouseAndWand.push("There is not enough info.");
+  }
+}
