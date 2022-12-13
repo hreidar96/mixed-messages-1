@@ -34,4 +34,6 @@ const whichHouseAndWand = {
 
 // way to store message
 
+let assignedHouseAndWand = [];
+
 // Iterate over the the objects
