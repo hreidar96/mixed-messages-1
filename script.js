@@ -61,3 +61,10 @@ for (let prop in whichHouseAndWand) {
       assignedHouseAndWand.push("There is not enough info.");
   }
 }
+
+function formatHouseandWand(assignedValues) {
+  const formatted = assignedHouseAndWand.join("\n");
+  console.log(formatted);
+}
+
+formatHouseandWand(assignedHouseAndWand);
